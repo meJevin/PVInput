@@ -1,3 +1,5 @@
+This program only works on windows.
+
 To use this program simply apply a chroma-key effect onto it in your favorite screen-capture software.
 
 For example, in OBS, in order to remove the green background and only have keys displayed you'll have to follow steps below
