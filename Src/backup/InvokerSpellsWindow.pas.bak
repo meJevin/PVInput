@@ -1,6 +1,6 @@
 unit Unit4;
 
-{$mode objfpc}{$H+}
+{$mode delphi}
 
 interface
 

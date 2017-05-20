@@ -1,16 +1,19 @@
 object PVInput: TPVInput
-  Left = 585
+  Left = 454
   Height = 360
-  Top = 291
+  Top = 176
   Width = 942
   BorderIcons = [biMinimize]
-  BorderStyle = bsSingle
+  BorderStyle = bsNone
   Caption = 'PVInput'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 360
+  ClientWidth = 942
   Color = clLime
   OnCreate = FormCreate
   OnDestroy = FormDestroy
+  OnMouseDown = KeyboardPanelMouseDown
+  OnMouseMove = KeyboardPanelMouseMove
+  OnMouseUp = KeyboardPanelMouseUp
   PopupMenu = MainPopUpMenu
   Position = poScreenCenter
   LCLVersion = '1.6.0.4'
@@ -32,6 +35,9 @@ object PVInput: TPVInput
     ParentFont = False
     TabOrder = 1
     UseDockManager = False
+    OnMouseDown = KeyboardPanelMouseDown
+    OnMouseMove = KeyboardPanelMouseMove
+    OnMouseUp = KeyboardPanelMouseUp
     object Tab: TPanel
       AnchorSideLeft.Control = KeyboardPanel
       AnchorSideTop.Control = KeyboardPanel
@@ -54,6 +60,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object TabPressed: TShape
         Tag = 2
@@ -71,6 +80,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel: TLabel
@@ -88,9 +100,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -21
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object CapsLock: TPanel
@@ -118,6 +133,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object CapsLockPressed: TShape
         Tag = 2
@@ -135,6 +153,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel1: TLabel
@@ -152,9 +173,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -21
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object Shift: TPanel
@@ -182,6 +206,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object ShiftPressed: TShape
         Tag = 2
@@ -199,6 +226,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel2: TLabel
@@ -216,9 +246,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -21
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object Ctrl: TPanel
@@ -246,6 +279,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object CtrlPressed: TShape
         Tag = 2
@@ -263,6 +299,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel3: TLabel
@@ -280,9 +319,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -21
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object Q: TPanel
@@ -310,6 +352,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object QPressed: TShape
         Tag = 2
@@ -327,6 +372,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel4: TLabel
@@ -347,9 +395,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -28
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object W: TPanel
@@ -377,6 +428,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object WPressed: TShape
         Tag = 2
@@ -394,6 +448,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel5: TLabel
@@ -414,9 +471,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -28
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object E: TPanel
@@ -444,6 +504,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object EPressed: TShape
         Tag = 2
@@ -461,6 +524,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel6: TLabel
@@ -481,9 +547,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -28
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object R: TPanel
@@ -511,6 +580,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object RPressed: TShape
         Tag = 2
@@ -528,6 +600,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel7: TLabel
@@ -548,9 +623,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -28
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object F: TPanel
@@ -579,6 +657,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object FPressed: TShape
         Tag = 2
@@ -596,6 +677,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel8: TLabel
@@ -616,9 +700,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -28
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object S: TPanel
@@ -647,6 +734,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object SPressed: TShape
         Tag = 2
@@ -664,6 +754,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel9: TLabel
@@ -684,9 +777,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -28
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object D: TPanel
@@ -715,6 +811,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object DPressed: TShape
         Tag = 2
@@ -732,6 +831,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel10: TLabel
@@ -752,9 +854,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -28
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object A: TPanel
@@ -783,6 +888,9 @@ object PVInput: TPVInput
         Anchors = [akTop, akLeft, akRight]
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object APressed: TShape
         Tag = 2
@@ -800,6 +908,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel11: TLabel
@@ -820,9 +931,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -28
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object V: TPanel
@@ -851,6 +965,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object VPressed: TShape
         Tag = 2
@@ -868,6 +985,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel12: TLabel
@@ -888,9 +1008,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -28
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object X: TPanel
@@ -919,6 +1042,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object XPressed: TShape
         Tag = 2
@@ -936,6 +1062,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel13: TLabel
@@ -956,9 +1085,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -28
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object C: TPanel
@@ -987,6 +1119,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object CPressed: TShape
         Tag = 2
@@ -1004,6 +1139,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel14: TLabel
@@ -1024,9 +1162,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -28
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object Z: TPanel
@@ -1055,6 +1196,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object ZPressed: TShape
         Tag = 2
@@ -1072,6 +1216,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel15: TLabel
@@ -1091,9 +1238,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -28
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object Win: TPanel
@@ -1123,6 +1273,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object WinPressed: TShape
         Tag = 2
@@ -1140,6 +1293,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel16: TLabel
@@ -1157,9 +1313,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -21
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object SpaceBar: TPanel
@@ -1189,6 +1348,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object SpaceBarPressed: TShape
         Tag = 2
@@ -1206,6 +1368,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
     end
@@ -1236,6 +1401,9 @@ object PVInput: TPVInput
         Pen.Color = clNone
         Pen.Cosmetic = False
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object AltPressed: TShape
         Tag = 2
@@ -1253,6 +1421,9 @@ object PVInput: TPVInput
         Brush.Color = 6579300
         Pen.Color = clNone
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object KeyLabel18: TLabel
@@ -1270,9 +1441,12 @@ object PVInput: TPVInput
         Font.Color = clBlack
         Font.Height = -21
         Font.Name = 'Verdana'
-        Font.Quality = fqAntialiased
+        Font.Quality = fqProof
         ParentColor = False
         ParentFont = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
   end
@@ -1285,9 +1459,9 @@ object PVInput: TPVInput
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = Owner
     AnchorSideBottom.Side = asrBottom
-    Left = -216
+    Left = 726
     Height = 328
-    Top = -164
+    Top = 16
     Width = 196
     Anchors = [akTop, akRight]
     BorderSpacing.Right = 20
@@ -1297,6 +1471,9 @@ object PVInput: TPVInput
     FullRepaint = False
     TabOrder = 2
     UseDockManager = False
+    OnMouseDown = KeyboardPanelMouseDown
+    OnMouseMove = KeyboardPanelMouseMove
+    OnMouseUp = KeyboardPanelMouseUp
     object LMB: TPanel
       AnchorSideLeft.Control = MousePanel
       AnchorSideTop.Control = MousePanel
@@ -1309,6 +1486,7 @@ object PVInput: TPVInput
       ClientHeight = 78
       ClientWidth = 62
       TabOrder = 0
+      OnMouseDown = KeyboardPanelMouseDown
       object MouseLeftBG: TShape
         Tag = 1
         AnchorSideLeft.Control = LMB
@@ -1323,6 +1501,9 @@ object PVInput: TPVInput
         Width = 62
         Anchors = [akTop, akLeft, akRight, akBottom]
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object MouseLeft: TShape
         Tag = 2
@@ -1339,6 +1520,9 @@ object PVInput: TPVInput
         Anchors = [akTop, akLeft, akRight, akBottom]
         Brush.Color = 6579300
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object LMBLabel: TLabel
@@ -1362,6 +1546,9 @@ object PVInput: TPVInput
         ParentColor = False
         ParentFont = False
         Visible = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object RMB: TPanel
@@ -1380,6 +1567,7 @@ object PVInput: TPVInput
       ClientHeight = 78
       ClientWidth = 62
       TabOrder = 1
+      OnMouseDown = KeyboardPanelMouseDown
       object MouseRightBG: TShape
         Tag = 1
         AnchorSideLeft.Control = RMB
@@ -1394,6 +1582,9 @@ object PVInput: TPVInput
         Width = 62
         Anchors = [akTop, akLeft, akRight, akBottom]
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object MouseRight: TShape
         Tag = 2
@@ -1410,6 +1601,9 @@ object PVInput: TPVInput
         Anchors = [akTop, akLeft, akRight, akBottom]
         Brush.Color = 6579300
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object RMBLabel: TLabel
@@ -1433,6 +1627,9 @@ object PVInput: TPVInput
         ParentColor = False
         ParentFont = False
         Visible = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
     object MMB: TPanel
@@ -1447,6 +1644,7 @@ object PVInput: TPVInput
       ClientHeight = 78
       ClientWidth = 40
       TabOrder = 2
+      OnMouseDown = KeyboardPanelMouseDown
       object MouseMiddleBG: TShape
         Tag = 1
         AnchorSideLeft.Control = MMB
@@ -1461,6 +1659,9 @@ object PVInput: TPVInput
         Width = 40
         Anchors = [akTop, akLeft, akRight, akBottom]
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
       object MouseMiddle: TShape
         Tag = 2
@@ -1477,6 +1678,9 @@ object PVInput: TPVInput
         Anchors = [akTop, akLeft, akRight, akBottom]
         Brush.Color = 6579300
         Pen.Style = psClear
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
         Visible = False
       end
       object MMBLabel: TLabel
@@ -1502,6 +1706,9 @@ object PVInput: TPVInput
         ParentColor = False
         ParentFont = False
         Visible = False
+        OnMouseDown = KeyboardPanelMouseDown
+        OnMouseMove = KeyboardPanelMouseMove
+        OnMouseUp = KeyboardPanelMouseUp
       end
     end
   end
@@ -1519,6 +1726,9 @@ object PVInput: TPVInput
     FullRepaint = False
     TabOrder = 3
     UseDockManager = False
+    OnMouseDown = KeyboardPanelMouseDown
+    OnMouseMove = KeyboardPanelMouseMove
+    OnMouseUp = KeyboardPanelMouseUp
     object HistoryBox: TListBox
       AnchorSideLeft.Control = HistoryPanel
       AnchorSideTop.Control = HistoryPanel
@@ -1538,6 +1748,9 @@ object PVInput: TPVInput
       Font.Height = -11
       Font.Name = 'Verdana'
       ItemHeight = 0
+      OnMouseDown = KeyboardPanelMouseDown
+      OnMouseMove = KeyboardPanelMouseMove
+      OnMouseUp = KeyboardPanelMouseUp
       ParentFont = False
       PopupMenu = InputHistPopUpMenu
       TabOrder = 0
@@ -1556,6 +1769,9 @@ object PVInput: TPVInput
       Width = 116
       Anchors = [akTop, akLeft, akRight, akBottom]
       Brush.Color = clBlack
+      OnMouseDown = KeyboardPanelMouseDown
+      OnMouseMove = KeyboardPanelMouseMove
+      OnMouseUp = KeyboardPanelMouseUp
     end
   end
   object InvokerKeys: TListBox
@@ -1565,9 +1781,9 @@ object PVInput: TPVInput
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = HistoryPanel
     AnchorSideBottom.Side = asrBottom
-    Left = -40
+    Left = -64
     Height = 68
-    Top = -34
+    Top = -48
     Width = 80
     Anchors = []
     BorderSpacing.Around = 3

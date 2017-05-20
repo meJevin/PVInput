@@ -1,6 +1,6 @@
-unit Unit2;
+unit SettingsWindow;
 
-{$mode objfpc}{$H+}
+{$mode delphi}
 
 interface
 
@@ -83,7 +83,7 @@ const
 
 implementation
 
-uses Unit1, Unit3, Unit4;
+uses MainWindow, DetachedHistoryWindow, InvokerSpellsWindow;
 {$R *.lfm}
 
 // TAG 1 - KEY BG (TSHAPE)

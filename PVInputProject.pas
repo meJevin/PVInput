@@ -1,4 +1,4 @@
-program project1;
+program PVInputProject;
 
 {$mode objfpc}{$H+}
 
@@ -7,19 +7,21 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, Unit1, Unit2, Unit3, Unit4
-  { you can add units after this };
+  Forms, MainWindow, SettingsWindow, DetachedHistoryWindow, InvokerSpellsWindow;
 
 {$R *.res}
 
 begin
   Application.Title:='PVInput';
   RequireDerivedFormResource:=True;
+
   Application.Initialize;
+
   Application.CreateForm(TPVInput, PVInput);
   Application.CreateForm(TDetachedHistoryForm, DetachedHistoryForm);
   Application.CreateForm(TSettingsForm, SettingsForm);
   Application.CreateForm(TInvokerSpellsForm, InvokerSpellsForm);
+
   Application.Run;
 end.
 

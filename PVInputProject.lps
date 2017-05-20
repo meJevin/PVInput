@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="25">
+      <Unit0>
+        <Filename Value="PVInputProject.pas"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="13" Y="5"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="Src\DetachedHistoryWindow.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="28" Y="77"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="Src\InvokerSpellsWindow.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="25"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="Src\MainWindow.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PVInput"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="120"/>
+        <CursorPos X="53" Y="135"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="Src\SettingsWindow.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="100"/>
+        <CursorPos Y="100"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="unit1.pas"/>
+        <ComponentName Value="PVInput"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="11"/>
+        <UsageCount Value="73"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="prog_hook_dll.pas"/>
+        <UnitName Value="Prog_hook_dll"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="73"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="unit2.pas"/>
+        <ComponentName Value="SettingsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit2"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="17" Y="2"/>
+        <UsageCount Value="60"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="unit3.pas"/>
+        <ComponentName Value="DetachedHistoryForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit3"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="35"/>
+        <CursorPos X="11" Y="52"/>
+        <UsageCount Value="44"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="unit4.pas"/>
+        <ComponentName Value="InvokerSpellsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit4"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="17" Y="3"/>
+        <UsageCount Value="26"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="G:\Lazarus\lcl\lclproc.pas"/>
+        <UnitName Value="LCLProc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="761"/>
+        <CursorPos Y="902"/>
+        <UsageCount Value="8"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="G:\Lazarus\lcl\include\application.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2143"/>
+        <CursorPos X="33" Y="2158"/>
+        <UsageCount Value="8"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="G:\Lazarus\lcl\interfaces\win32\win32winapi.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3498"/>
+        <CursorPos Y="3513"/>
+        <UsageCount Value="8"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="G:\Lazarus\lcl\grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9101"/>
+        <CursorPos Y="9118"/>
+        <UsageCount Value="8"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="G:\Lazarus\components\lazutils\lazutf8classes.pas"/>
+        <UnitName Value="LazUTF8Classes"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="126"/>
+        <CursorPos Y="143"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="G:\Lazarus\components\lazutils\laz2_xmlread.pas"/>
+        <UnitName Value="laz2_XMLRead"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1496"/>
+        <CursorPos Y="1513"/>
+        <UsageCount Value="9"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="G:\Lazarus\lcl\include\fpimagebitmap.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="125"/>
+        <CursorPos Y="141"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="G:\Lazarus\lcl\interfaces\win32\win32listsl.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="141"/>
+        <CursorPos Y="158"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="G:\Lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="382"/>
+        <CursorPos X="13" Y="393"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="unit1.lfm"/>
+        <ComponentName Value="PVInput"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="MainWindow.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="728"/>
+        <CursorPos Y="759"/>
+        <UsageCount Value="10"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="Src\DetachedHistoryWindow.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="Src\InvokerSpellsWindow.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="Src\MainWindow.lfm"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="Src\SettingsWindow.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit24>
+    </Units>
+    <JumpHistory Count="25" HistoryIndex="24">
+      <Position1>
+        <Filename Value="Src\DetachedHistoryWindow.pas"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Src\DetachedHistoryWindow.pas"/>
+        <Caret Line="6" Column="19"/>
+      </Position2>
+      <Position3>
+        <Filename Value="Src\DetachedHistoryWindow.pas"/>
+        <Caret Column="6"/>
+      </Position3>
+      <Position4>
+        <Filename Value="Src\InvokerSpellsWindow.pas"/>
+      </Position4>
+      <Position5>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="166" Column="26" TopLine="144"/>
+      </Position5>
+      <Position6>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="770" Column="7" TopLine="741"/>
+      </Position6>
+      <Position7>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="787" Column="7" TopLine="755"/>
+      </Position7>
+      <Position8>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="779" Column="24" TopLine="769"/>
+      </Position8>
+      <Position9>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="766" Column="3" TopLine="763"/>
+      </Position9>
+      <Position10>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="780" Column="19" TopLine="668"/>
+      </Position10>
+      <Position11>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="171" Column="8" TopLine="146"/>
+      </Position11>
+      <Position12>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="784" Column="23" TopLine="771"/>
+      </Position12>
+      <Position13>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="772" Column="10" TopLine="764"/>
+      </Position13>
+      <Position14>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="782" Column="23" TopLine="771"/>
+      </Position14>
+      <Position15>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="784" Column="23" TopLine="764"/>
+      </Position15>
+      <Position16>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="770" Column="25" TopLine="743"/>
+      </Position16>
+      <Position17>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="771" Column="26" TopLine="634"/>
+      </Position17>
+      <Position18>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="670" Column="24" TopLine="669"/>
+      </Position18>
+      <Position19>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="802" Column="3" TopLine="779"/>
+      </Position19>
+      <Position20>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="769" Column="3" TopLine="766"/>
+      </Position20>
+      <Position21>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="799" Column="17" TopLine="773"/>
+      </Position21>
+      <Position22>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="783" Column="3" TopLine="778"/>
+      </Position22>
+      <Position23>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="797" Column="6" TopLine="773"/>
+      </Position23>
+      <Position24>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="137" Column="23" TopLine="120"/>
+      </Position24>
+      <Position25>
+        <Filename Value="Src\MainWindow.pas"/>
+        <Caret Line="797" Column="5" TopLine="773"/>
+      </Position25>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <Watches Count="1">
+      <Item1>
+        <Expression Value="Up Left"/>
+      </Item1>
+    </Watches>
+  </Debugging>
+</CONFIG>

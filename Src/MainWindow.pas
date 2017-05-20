@@ -1,4 +1,4 @@
-unit Unit1;
+unit MainWindow;
 
 // TAG 1 - KEY BG (TSHAPE)
 // TAG 2 - KEY PRESSED (TSHAPE)
@@ -10,7 +10,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls, LCL,
-  Windows, Messages, Variants, StdCtrls, jwawinuser, lcltype, Menus, Unit2;
+  Windows, Messages, Variants, StdCtrls, jwawinuser, lcltype, Menus, SettingsWindow;
 
 type
 
@@ -127,6 +127,12 @@ type
     procedure HideItemClick(Sender: TObject);
     procedure InvertItemClick(Sender: TObject);
     procedure ExitItemClick(Sender: TObject);
+    procedure KeyboardPanelMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
+    procedure KeyboardPanelMouseMove(Sender: TObject; Shift: TShiftState; X,
+      Y: Integer);
+    procedure KeyboardPanelMouseUp(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
     procedure SettingsItemClick(Sender: TObject);
 
     procedure InvertColors();
@@ -160,6 +166,9 @@ var
   isHistoryDetached: boolean;
 
   isInvokerSupportEnabled: boolean;
+
+  isBeingMoved: boolean;
+  prevX, prevY: longInt;
 
 const
   HookMsg = WM_USER+$125;
@@ -198,7 +207,7 @@ type
 
 implementation
 
-uses Unit3, Unit4;
+uses DetachedHistoryWindow, InvokerSpellsWindow;
 
 {$R *.lfm}
 
@@ -662,6 +671,7 @@ begin
   isHistoryShowing := true;
   isInvertedColor := false;
   isHistoryDetached := false;
+  isBeingMoved := false;
 
   MouseHook := SetWindowsHookEx(WH_MOUSE_LL, @LowLevelMouseProc, HInstance, 0);
   KeyboardHookLowLevel := SetWindowsHookEx(WH_KEYBOARD_LL, @LowLevelKeyboardProc, HInstance, 0);
@@ -749,6 +759,39 @@ end;
 procedure TPVInput.ExitItemClick(Sender: TObject);
 begin
   Application.Terminate;
+end;
+
+procedure TPVInput.KeyboardPanelMouseDown(Sender: TObject;
+  Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+begin
+  if (Button = TMouseButton.mbLeft) then
+  begin
+    isBeingMoved := true;
+
+    prevX := X;
+    prevY := Y;
+  end;
+end;
+
+procedure TPVInput.KeyboardPanelMouseMove(Sender: TObject; Shift: TShiftState;
+  X, Y: Integer);
+var
+  diffX, diffY: longInt;
+begin
+  if (isBeingMoved) then
+  begin
+    diffX := X - prevX;
+    diffY := Y - prevY;
+
+    PVInput.Left:=PVInput.Left + diffX;
+    PVInput.Top:=PVInput.Top + diffY;
+  end;
+end;
+
+procedure TPVInput.KeyboardPanelMouseUp(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Integer);
+begin
+  isBeingMoved := false;
 end;
 
 procedure TPVInput.SettingsItemClick(Sender: TObject);

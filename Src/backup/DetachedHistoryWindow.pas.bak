@@ -1,6 +1,6 @@
 unit Unit3;
 
-{$mode objfpc}{$H+}
+{$mode delphi}
 
 interface
 
@@ -49,7 +49,7 @@ var
   isBeingResized: boolean;
 implementation
 
-uses Unit1;
+uses MainWindow;
 
 {$R *.lfm}
 
